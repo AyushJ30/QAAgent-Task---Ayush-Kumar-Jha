@@ -1,0 +1,165 @@
+[
+  {
+    "id": "TC01",
+    "description": "User enters job description manually and saves it",
+    "steps": [
+      "Navigate to JD input page",
+      "Type in a complete job description",
+      "Click 'Save'",
+      "Verify success message and skill suggestions appear"
+    ]
+  },
+  {
+    "id": "TC02",
+    "description": "User enters only job title and generates job description",
+    "steps": [
+      "Enter job title (e.g., '2-year JavaScript developer with AWS')",
+      "Click 'Generate JD'",
+      "Verify job description is populated automatically"
+    ]
+  },
+  {
+    "id": "TC03",
+    "description": "User edits the auto-generated job description",
+    "steps": [
+      "Use 'Enhanced JD' to generate description",
+      "Modify some content",
+      "Click 'Save'",
+      "Verify changes are preserved"
+    ]
+  },
+  {
+    "id": "TC04",
+    "description": "Verify AI skill suggestions appear after saving job description",
+    "steps": [
+      "Save a valid job description",
+      "Wait for skill extraction",
+      "Verify a list of skills is displayed"
+    ]
+  },
+  {
+    "id": "TC05",
+    "description": "User selects recommended skills for interview pipeline",
+    "steps": [
+      "View recommended skills",
+      "Select one or more skills",
+      "Click 'Continue'",
+      "Verify selected skills are passed to next steps"
+    ]
+  },
+  {
+    "id": "TC06",
+    "description": "Show validation error when job description is empty",
+    "steps": [
+      "Leave job description blank",
+      "Click 'Save'",
+      "Verify inline error message appears"
+    ]
+  },
+  {
+    "id": "TC07",
+    "description": "Handle very short job title in Enhanced JD",
+    "steps": [
+      "Enter short job title (e.g. 'Dev')",
+      "Click 'Generate JD'",
+      "Verify either meaningful JD is created or user is prompted for more detail"
+    ]
+  },
+  {
+    "id": "TC08",
+    "description": "Handle vague job title and skill extraction",
+    "steps": [
+      "Enter vague title like 'Engineer'",
+      "Click 'Generate JD'",
+      "Save and check skill suggestions",
+      "Verify ambiguous results are handled gracefully"
+    ]
+  },
+  {
+    "id": "TC09",
+    "description": "Submit very large job description without freezing UI",
+    "steps": [
+      "Paste 10,000+ character job description",
+      "Click 'Save'",
+      "Verify app responsiveness and successful processing"
+    ]
+  },
+  {
+    "id": "TC10",
+    "description": "Handle network failure during JD generation",
+    "steps": [
+      "Enter job title",
+      "Disable network",
+      "Click 'Generate JD'",
+      "Verify error message and retry option appear"
+    ]
+  },
+  {
+    "id": "TC11",
+    "description": "Handle network failure during skill extraction",
+    "steps": [
+      "Save job description",
+      "Disable network",
+      "Verify fallback message or retry button appears instead of crashing"
+    ]
+  },
+  {
+    "id": "TC12",
+    "description": "Ensure keyboard accessibility for all inputs and buttons",
+    "steps": [
+      "Use Tab key to navigate to JD input, job title, generate, save",
+      "Verify focus rings and interaction via keyboard only"
+    ]
+  },
+  {
+    "id": "TC13",
+    "description": "Verify screen reader reads job title input and generate button",
+    "steps": [
+      "Enable screen reader",
+      "Focus on job title input and generate button",
+      "Verify proper label is announced"
+    ]
+  },
+  {
+    "id": "TC14",
+    "description": "Skill suggestions are accessible by keyboard and screen reader",
+    "steps": [
+      "Tab through skill suggestions",
+      "Verify focus highlight and voice feedback"
+    ]
+  },
+  {
+    "id": "TC15",
+    "description": "Verify WCAG-compliant contrast across all elements",
+    "steps": [
+      "Run accessibility audit",
+      "Check color contrast on inputs, labels, and buttons"
+    ]
+  },
+  {
+    "id": "TC16",
+    "description": "Job description generation happens within 3 seconds",
+    "steps": [
+      "Enter common title",
+      "Click 'Generate JD'",
+      "Measure response time is under 3s"
+    ]
+  },
+  {
+    "id": "TC17",
+    "description": "Skill extraction completes within 2 seconds",
+    "steps": [
+      "Save a 500-character job description",
+      "Measure time until skill list appears"
+    ]
+  },
+  {
+    "id": "TC18",
+    "description": "App stays responsive during generation with large inputs",
+    "steps": [
+      "Enter a very large job description",
+      "Click 'Save' and interact with other parts of the screen",
+      "Ensure no lag or freeze occurs"
+    ]
+  }
+]

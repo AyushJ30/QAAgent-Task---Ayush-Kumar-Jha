@@ -1,0 +1,157 @@
+[
+  {
+    "id": "TC01",
+    "description": "Submit valid job description and verify AI-generated questions appear",
+    "steps": [
+      "Navigate to interview creation page",
+      "Enter valid job description",
+      "Click 'Generate Questions'",
+      "Verify questions appear"
+    ]
+  },
+  {
+    "id": "TC02",
+    "description": "Customize AI-generated questions before proceeding",
+    "steps": [
+      "Submit job description",
+      "Edit one or more suggested questions",
+      "Click 'Next' or 'Save'",
+      "Verify changes are retained"
+    ]
+  },
+  {
+    "id": "TC03",
+    "description": "Establish interview after customizing questions",
+    "steps": [
+      "Complete question customization",
+      "Click 'Establish Interview'",
+      "Verify interview creation success message"
+    ]
+  },
+  {
+    "id": "TC04",
+    "description": "Advanced plan user selects AI avatar and proceeds",
+    "steps": [
+      "Login as Advanced Plan user",
+      "Submit job description",
+      "Select AI avatar",
+      "Click 'Proceed'",
+      "Verify avatar is saved with interview"
+    ]
+  },
+  {
+    "id": "TC05",
+    "description": "Free user should not see avatar selection step",
+    "steps": [
+      "Login as Free Plan user",
+      "Submit job description",
+      "Verify avatar selection is not visible"
+    ]
+  },
+  {
+    "id": "TC06",
+    "description": "Show validation error when job description is empty",
+    "steps": [
+      "Leave job description input blank",
+      "Click 'Generate Questions'",
+      "Verify validation message appears"
+    ]
+  },
+  {
+    "id": "TC07",
+    "description": "Handle nonsensical job description input",
+    "steps": [
+      "Enter only special characters (e.g. @@@###)",
+      "Click 'Generate Questions'",
+      "Verify prompt for valid input"
+    ]
+  },
+  {
+    "id": "TC08",
+    "description": "Submit very large job description without crashing",
+    "steps": [
+      "Paste 10,000+ character text",
+      "Click 'Generate Questions'",
+      "Verify system remains responsive"
+    ]
+  },
+  {
+    "id": "TC09",
+    "description": "Simulate network failure during submission",
+    "steps": [
+      "Disable network (dev tools)",
+      "Click 'Generate Questions'",
+      "Verify error or retry UI appears"
+    ]
+  },
+  {
+    "id": "TC10",
+    "description": "Refresh page mid-flow and check if state is preserved",
+    "steps": [
+      "Enter job description",
+      "Refresh page",
+      "Verify if input is retained or user is prompted to start over"
+    ]
+  },
+  {
+    "id": "TC11",
+    "description": "Verify keyboard navigation across input and buttons",
+    "steps": [
+      "Use Tab/Shift+Tab to navigate through fields",
+      "Ensure all fields and buttons are accessible"
+    ]
+  },
+  {
+    "id": "TC12",
+    "description": "Ensure screen reader reads job description input",
+    "steps": [
+      "Use screen reader",
+      "Navigate to job description field",
+      "Verify label or aria attribute is read"
+    ]
+  },
+  {
+    "id": "TC13",
+    "description": "Ensure contrast ratios are WCAG-compliant",
+    "steps": [
+      "Use accessibility audit tool",
+      "Check contrast for all buttons, labels, and text",
+      "Verify compliance"
+    ]
+  },
+  {
+    "id": "TC14",
+    "description": "Check avatar selection accessibility",
+    "steps": [
+      "Tab through avatar options",
+      "Verify focus outline and aria-labels are present"
+    ]
+  },
+  {
+    "id": "TC15",
+    "description": "Verify question generation under 3s for short inputs",
+    "steps": [
+      "Enter 500 character job description",
+      "Click 'Generate Questions'",
+      "Measure response time"
+    ]
+  },
+  {
+    "id": "TC16",
+    "description": "App remains responsive with large input",
+    "steps": [
+      "Enter 10,000 character job description",
+      "Scroll and interact with other parts of page",
+      "Verify smooth UX"
+    ]
+  },
+  {
+    "id": "TC17",
+    "description": "Ensure avatar selection does not freeze UI",
+    "steps": [
+      "Select AI avatar",
+      "Observe UI responsiveness",
+      "Ensure selection feedback occurs within 1s"
+    ]
+  }
+]

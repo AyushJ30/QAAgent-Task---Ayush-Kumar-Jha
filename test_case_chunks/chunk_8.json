@@ -1,0 +1,151 @@
+[
+  {
+    "id": "TC01",
+    "description": "Upload resume and receive skill-based score",
+    "steps": [
+      "Upload a resume",
+      "Wait for processing",
+      "Verify score is displayed"
+    ]
+  },
+  {
+    "id": "TC02",
+    "description": "Display AI recommendation status",
+    "steps": [
+      "Upload a resume",
+      "Verify if 'Recommended' or 'Not Recommended' is shown"
+    ]
+  },
+  {
+    "id": "TC03",
+    "description": "Show semantic skill match report",
+    "steps": [
+      "Upload resume",
+      "Verify UI displays matched, partially matched, and missing skills"
+    ]
+  },
+  {
+    "id": "TC04",
+    "description": "High score but not recommended due to misalignment",
+    "steps": [
+      "Upload resume with many skills but irrelevant domain",
+      "Verify AI explains reason for 'Not Recommended'"
+    ]
+  },
+  {
+    "id": "TC05",
+    "description": "Moderate score but good alignment results in recommendation",
+    "steps": [
+      "Upload resume with average score but good job fit",
+      "Verify candidate is marked 'Recommended'"
+    ]
+  },
+  {
+    "id": "TC06",
+    "description": "View job description alongside AI reasoning",
+    "steps": [
+      "Open candidate screening detail",
+      "Verify JD and reasoning are displayed"
+    ]
+  },
+  {
+    "id": "TC07",
+    "description": "Score high, not recommended – explanation shown",
+    "steps": [
+      "Upload strong resume with domain mismatch",
+      "Verify explanation card is visible"
+    ]
+  },
+  {
+    "id": "TC08",
+    "description": "Skill synonyms are semantically matched",
+    "steps": [
+      "Upload resume using alternate terms (e.g., 'Node.js')",
+      "Verify correct matching with job skill set (e.g., 'JavaScript')"
+    ]
+  },
+  {
+    "id": "TC09",
+    "description": "No matching skills = low score and rejection",
+    "steps": [
+      "Upload unrelated resume",
+      "Verify low score and rejection message"
+    ]
+  },
+  {
+    "id": "TC10",
+    "description": "Relevant roles, irrelevant domain = partial score",
+    "steps": [
+      "Upload resume with similar job titles but mismatched industry",
+      "Verify AI warns of mismatch"
+    ]
+  },
+  {
+    "id": "TC11",
+    "description": "Parse complex/multi-column resume correctly",
+    "steps": [
+      "Upload resume with multi-column layout",
+      "Verify score and skill extraction still function"
+    ]
+  },
+  {
+    "id": "TC12",
+    "description": "Handle network error during scoring",
+    "steps": [
+      "Disable internet connection",
+      "Upload resume",
+      "Verify retry/error message appears"
+    ]
+  },
+  {
+    "id": "TC13",
+    "description": "Score and recommendation are screen reader accessible",
+    "steps": [
+      "Enable screen reader",
+      "Upload resume and navigate to result",
+      "Verify label and value are read"
+    ]
+  },
+  {
+    "id": "TC14",
+    "description": "Semantic report is keyboard accessible",
+    "steps": [
+      "Use Tab to navigate through skill match results",
+      "Verify all elements are reachable"
+    ]
+  },
+  {
+    "id": "TC15",
+    "description": "AI explanation card is ARIA-labeled",
+    "steps": [
+      "Open 'Not Recommended' explanation",
+      "Verify it is read correctly by screen reader"
+    ]
+  },
+  {
+    "id": "TC16",
+    "description": "Resume analysis completes in <3s",
+    "steps": [
+      "Upload a resume",
+      "Time response from upload to score",
+      "Verify < 3s load time"
+    ]
+  },
+  {
+    "id": "TC17",
+    "description": "Bulk resume screening does not freeze UI",
+    "steps": [
+      "Upload 50 resumes",
+      "Interact with UI during processing",
+      "Verify responsiveness"
+    ]
+  },
+  {
+    "id": "TC18",
+    "description": "Long resumes do not slow semantic analysis view",
+    "steps": [
+      "Upload a 6-page resume",
+      "Verify skill report loads without lag"
+    ]
+  }
+]

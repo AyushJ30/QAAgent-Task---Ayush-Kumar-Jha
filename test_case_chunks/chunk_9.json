@@ -1,0 +1,151 @@
+[
+  {
+    "id": "TC01",
+    "description": "View AI recommendation and act on it",
+    "steps": [
+      "Open candidate profile with recommendation",
+      "Click Reject or Proceed",
+      "Verify action is recorded"
+    ]
+  },
+  {
+    "id": "TC02",
+    "description": "Send 24-hour interview link",
+    "steps": [
+      "Click Proceed on candidate",
+      "Verify interview link is generated with expiry"
+    ]
+  },
+  {
+    "id": "TC03",
+    "description": "Candidate opens interview link",
+    "steps": [
+      "Candidate clicks link",
+      "Verify interview page loads"
+    ]
+  },
+  {
+    "id": "TC04",
+    "description": "Candidate submits interview within time",
+    "steps": [
+      "Record and submit interview within 24 hours",
+      "Verify submission success"
+    ]
+  },
+  {
+    "id": "TC05",
+    "description": "Submitted interview is visible to recruiter",
+    "steps": [
+      "Recruiter opens candidate list",
+      "Verify interview marked as submitted"
+    ]
+  },
+  {
+    "id": "TC06",
+    "description": "Initiate interview screening",
+    "steps": [
+      "Click 'Start Screening' on submitted interview",
+      "Verify screening process starts"
+    ]
+  },
+  {
+    "id": "TC07",
+    "description": "Review AI-generated interview summary",
+    "steps": [
+      "Open candidate profile after screening",
+      "Verify summary is displayed"
+    ]
+  },
+  {
+    "id": "TC08",
+    "description": "Interview link expires after 24 hours",
+    "steps": [
+      "Open interview link after 24h",
+      "Verify 'Link Expired' message is shown"
+    ]
+  },
+  {
+    "id": "TC09",
+    "description": "Candidate submits invalid video",
+    "steps": [
+      "Upload corrupted or unsupported file",
+      "Verify error message is shown"
+    ]
+  },
+  {
+    "id": "TC10",
+    "description": "Start screening before interview submission",
+    "steps": [
+      "Try starting screening early",
+      "Verify system blocks or warns"
+    ]
+  },
+  {
+    "id": "TC11",
+    "description": "Interview submission fails mid-upload",
+    "steps": [
+      "Simulate internet drop during submission",
+      "Verify retry or autosave is triggered"
+    ]
+  },
+  {
+    "id": "TC12",
+    "description": "Reject already rejected candidate",
+    "steps": [
+      "Reject candidate",
+      "Click Reject again",
+      "Verify action is blocked or ignored"
+    ]
+  },
+  {
+    "id": "TC13",
+    "description": "Action buttons are screen-reader accessible",
+    "steps": [
+      "Enable screen reader",
+      "Navigate to Reject and Proceed buttons",
+      "Verify proper labels are read"
+    ]
+  },
+  {
+    "id": "TC14",
+    "description": "Confirmation message is accessible",
+    "steps": [
+      "Submit interview as candidate",
+      "Verify screen reader announces confirmation"
+    ]
+  },
+  {
+    "id": "TC15",
+    "description": "Expired link warning is accessible",
+    "steps": [
+      "Visit expired link",
+      "Verify warning has alert role and readable text"
+    ]
+  },
+  {
+    "id": "TC16",
+    "description": "Interview link opens under 2 seconds",
+    "steps": [
+      "Click interview link",
+      "Measure page load time",
+      "Ensure it's under 2s"
+    ]
+  },
+  {
+    "id": "TC17",
+    "description": "Large interview upload doesn't freeze UI",
+    "steps": [
+      "Upload 80MB video",
+      "Interact with page during upload",
+      "Verify responsiveness"
+    ]
+  },
+  {
+    "id": "TC18",
+    "description": "Interview summary loads quickly",
+    "steps": [
+      "Open AI summary after screening",
+      "Verify load time < 2s"
+    ]
+  }
+]

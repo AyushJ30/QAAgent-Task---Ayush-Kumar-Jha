@@ -1,0 +1,184 @@
+[
+  {
+    "id": "TC01",
+    "description": "Create interview and verify success",
+    "steps": [
+      "Click 'Create' button after editing",
+      "Verify confirmation message appears"
+    ]
+  },
+  {
+    "id": "TC02",
+    "description": "Verify public interview link is generated",
+    "steps": [
+      "Create interview",
+      "Check UI for unique link",
+      "Verify format and presence"
+    ]
+  },
+  {
+    "id": "TC03",
+    "description": "Open public interview link",
+    "steps": [
+      "Visit public link in browser",
+      "Verify candidate form is loaded"
+    ]
+  },
+  {
+    "id": "TC04",
+    "description": "Candidate fills form with name, email, and resume",
+    "steps": [
+      "Enter valid name and email",
+      "Upload supported resume file (.pdf)",
+      "Click Submit"
+    ]
+  },
+  {
+    "id": "TC05",
+    "description": "Candidate receives OTP and verifies email",
+    "steps": [
+      "Submit email",
+      "Enter valid OTP",
+      "Verify form proceeds to resume review"
+    ]
+  },
+  {
+    "id": "TC06",
+    "description": "AI processes resume and displays score",
+    "steps": [
+      "Upload resume",
+      "Wait for score response",
+      "Verify score appears"
+    ]
+  },
+  {
+    "id": "TC07",
+    "description": "Resume threshold logic accepts or rejects",
+    "steps": [
+      "Enable threshold (e.g., 70%)",
+      "Upload resume with lower score",
+      "Verify rejection message shown"
+    ]
+  },
+  {
+    "id": "TC08",
+    "description": "Access interview link before creation",
+    "steps": [
+      "Open random/invalid interview URL",
+      "Verify 404 or error page is shown"
+    ]
+  },
+  {
+    "id": "TC09",
+    "description": "Candidate enters invalid email",
+    "steps": [
+      "Type 'user@.com'",
+      "Click 'Send OTP'",
+      "Verify validation error appears"
+    ]
+  },
+  {
+    "id": "TC10",
+    "description": "Candidate enters wrong or expired OTP",
+    "steps": [
+      "Submit incorrect OTP",
+      "Verify error message appears"
+    ]
+  },
+  {
+    "id": "TC11",
+    "description": "Upload unsupported resume file",
+    "steps": [
+      "Try uploading '.exe' file",
+      "Verify upload is blocked"
+    ]
+  },
+  {
+    "id": "TC12",
+    "description": "Submit form without resume upload",
+    "steps": [
+      "Skip file upload",
+      "Click Submit",
+      "Verify blocking validation"
+    ]
+  },
+  {
+    "id": "TC13",
+    "description": "Handle network failure during OTP request",
+    "steps": [
+      "Disable network",
+      "Click 'Send OTP'",
+      "Verify retry option or error message"
+    ]
+  },
+  {
+    "id": "TC14",
+    "description": "Network error during resume scoring",
+    "steps": [
+      "Upload resume",
+      "Disable network",
+      "Verify fallback message"
+    ]
+  },
+  {
+    "id": "TC15",
+    "description": "Upload very large resume file",
+    "steps": [
+      "Try uploading 15MB PDF",
+      "Verify app handles without freezing"
+    ]
+  },
+  {
+    "id": "TC16",
+    "description": "Form fields are screen-reader accessible",
+    "steps": [
+      "Enable screen reader",
+      "Navigate form fields",
+      "Verify labels are announced"
+    ]
+  },
+  {
+    "id": "TC17",
+    "description": "OTP input is keyboard-navigable",
+    "steps": [
+      "Use Tab to reach OTP field",
+      "Type and submit OTP",
+      "Verify functionality"
+    ]
+  },
+  {
+    "id": "TC18",
+    "description": "Check WCAG-compliant contrast",
+    "steps": [
+      "Run contrast checker on form and buttons",
+      "Verify all pass minimum threshold"
+    ]
+  },
+  {
+    "id": "TC19",
+    "description": "Interview link loads under 2s",
+    "steps": [
+      "Visit public link",
+      "Measure time to form render",
+      "Ensure it's < 2s"
+    ]
+  },
+  {
+    "id": "TC20",
+    "description": "OTP received within 5s",
+    "steps": [
+      "Submit email",
+      "Measure delay to OTP arrival",
+      "Verify it's < 5s"
+    ]
+  },
+  {
+    "id": "TC21",
+    "description": "Resume scoring completes under 3s",
+    "steps": [
+      "Upload resume",
+      "Measure time to score display",
+      "Verify it's < 3s"
+    ]
+  }
+]

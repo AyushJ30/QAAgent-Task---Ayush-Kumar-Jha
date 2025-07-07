@@ -1,0 +1,50 @@
+# Python related
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.ipynb_checkpoints
+.env
+*.env
+
+# Virtual env
+.venv/
+venv/
+env/
+
+# Logs and temp
+*.log
+*.tmp
+
+# Audio / transcription / media
+*.webm
+*.mp3
+*.wav
+*.m4a
+*.zip
+*.srt
+*.vtt
+
+# Playwright
+playwright-report/
+test-results/
+*.spec.ts.snap
+
+#QA Dashboard
+qa_dashboard/
+
+#Chunks text
+chunks/
+
+#test case chunks md
+test_case_chunks/ *.md
+
+
+# Playwright tests
+playwright_tests/
+
+test_cases.md
+test_cases.json
+
+#node modules
+node_modules/

@@ -1,0 +1,159 @@
+[
+  {
+    "id": "TC01",
+    "description": "Candidate meets threshold and proceeds to video interview",
+    "steps": [
+      "Upload resume with high score",
+      "Verify candidate reaches video interview stage"
+    ]
+  },
+  {
+    "id": "TC02",
+    "description": "Candidate below threshold receives rejection message",
+    "steps": [
+      "Upload low-score resume",
+      "Verify system shows 'not a good fit' message"
+    ]
+  },
+  {
+    "id": "TC03",
+    "description": "View candidate submissions in Responses tab",
+    "steps": [
+      "Navigate to Responses",
+      "Verify candidate list and data appears"
+    ]
+  },
+  {
+    "id": "TC04",
+    "description": "Verify video, resume, answers, and scores are shown in responses",
+    "steps": [
+      "Open a candidate record",
+      "Check all 4 data elements are visible and functional"
+    ]
+  },
+  {
+    "id": "TC05",
+    "description": "Open Interview Screenings for AI-based scoring details",
+    "steps": [
+      "Navigate to Interview Screenings tab",
+      "Click on a candidate",
+      "Verify scoring metrics appear"
+    ]
+  },
+  {
+    "id": "TC06",
+    "description": "Resume, video, and answers are linked per candidate",
+    "steps": [
+      "Open a candidate's detailed view",
+      "Verify correct links between resume, video, and responses"
+    ]
+  },
+  {
+    "id": "TC07",
+    "description": "Candidate score exactly equals threshold",
+    "steps": [
+      "Upload resume scoring exactly at threshold",
+      "Verify candidate proceeds to interview"
+    ]
+  },
+  {
+    "id": "TC08",
+    "description": "Threshold not configured",
+    "steps": [
+      "Disable resume threshold setting",
+      "Submit resume",
+      "Verify fallback logic or admin notice"
+    ]
+  },
+  {
+    "id": "TC09",
+    "description": "Resume file can't be analyzed",
+    "steps": [
+      "Upload corrupted resume file",
+      "Verify error is shown and user prompted"
+    ]
+  },
+  {
+    "id": "TC10",
+    "description": "Video interview skipped",
+    "steps": [
+      "Start and quit video interview early",
+      "Verify UI shows partial status in Responses tab"
+    ]
+  },
+  {
+    "id": "TC11",
+    "description": "Network failure on Responses tab",
+    "steps": [
+      "Disable network and open Responses tab",
+      "Verify fallback or retry appears"
+    ]
+  },
+  {
+    "id": "TC12",
+    "description": "No responses submitted yet",
+    "steps": [
+      "Open Responses tab with no candidates",
+      "Verify empty state message appears"
+    ]
+  },
+  {
+    "id": "TC13",
+    "description": "Performance under 200+ responses",
+    "steps": [
+      "Seed 200+ mock candidates",
+      "Load Responses tab",
+      "Verify interface remains responsive"
+    ]
+  },
+  {
+    "id": "TC14",
+    "description": "Keyboard navigation through candidate records",
+    "steps": [
+      "Use Tab to navigate Responses",
+      "Open record and check keyboard access"
+    ]
+  },
+  {
+    "id": "TC15",
+    "description": "Screen reader reads AI score and resume details",
+    "steps": [
+      "Enable screen reader",
+      "Navigate a candidate's record",
+      "Verify all key fields are announced"
+    ]
+  },
+  {
+    "id": "TC16",
+    "description": "UI meets WCAG contrast compliance",
+    "steps": [
+      "Run contrast audit",
+      "Verify all visible text and components pass"
+    ]
+  },
+  {
+    "id": "TC17",
+    "description": "Responses tab loads under 3 seconds with 50+ entries",
+    "steps": [
+      "Seed 50+ candidates",
+      "Load tab and time the render",
+      "Ensure it loads under 3s"
+    ]
+  },
+  {
+    "id": "TC18",
+    "description": "Video player initializes quickly",
+    "steps": [
+      "Click a candidate’s video response",
+      "Measure player load time (< 1s)"
+    ]
+  },
+  {
+    "id": "TC19",
+    "description": "Detailed scoring loads quickly",
+    "steps": [
+      "Open Interview Screening view for candidate",
+      "Measure render time (< 2s)"
+    ]
+  }
+]

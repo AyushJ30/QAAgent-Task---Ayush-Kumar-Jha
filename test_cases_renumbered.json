@@ -1,0 +1,1506 @@
+[
+  {
+    "id": "TC001",
+    "description": "Submit valid job description and verify AI-generated questions appear",
+    "steps": [
+      "Navigate to interview creation page",
+      "Enter valid job description",
+      "Click 'Generate Questions'",
+      "Verify questions appear"
+    ]
+  },
+  {
+    "id": "TC002",
+    "description": "Customize AI-generated questions before proceeding",
+    "steps": [
+      "Submit job description",
+      "Edit one or more suggested questions",
+      "Click 'Next' or 'Save'",
+      "Verify changes are retained"
+    ]
+  },
+  {
+    "id": "TC003",
+    "description": "Establish interview after customizing questions",
+    "steps": [
+      "Complete question customization",
+      "Click 'Establish Interview'",
+      "Verify interview creation success message"
+    ]
+  },
+  {
+    "id": "TC004",
+    "description": "Advanced plan user selects AI avatar and proceeds",
+    "steps": [
+      "Login as Advanced Plan user",
+      "Submit job description",
+      "Select AI avatar",
+      "Click 'Proceed'",
+      "Verify avatar is saved with interview"
+    ]
+  },
+  {
+    "id": "TC005",
+    "description": "Free user should not see avatar selection step",
+    "steps": [
+      "Login as Free Plan user",
+      "Submit job description",
+      "Verify avatar selection is not visible"
+    ]
+  },
+  {
+    "id": "TC006",
+    "description": "Show validation error when job description is empty",
+    "steps": [
+      "Leave job description input blank",
+      "Click 'Generate Questions'",
+      "Verify validation message appears"
+    ]
+  },
+  {
+    "id": "TC007",
+    "description": "Handle nonsensical job description input",
+    "steps": [
+      "Enter only special characters (e.g. @@@###)",
+      "Click 'Generate Questions'",
+      "Verify prompt for valid input"
+    ]
+  },
+  {
+    "id": "TC008",
+    "description": "Submit very large job description without crashing",
+    "steps": [
+      "Paste 10,000+ character text",
+      "Click 'Generate Questions'",
+      "Verify system remains responsive"
+    ]
+  },
+  {
+    "id": "TC009",
+    "description": "Simulate network failure during submission",
+    "steps": [
+      "Disable network (dev tools)",
+      "Click 'Generate Questions'",
+      "Verify error or retry UI appears"
+    ]
+  },
+  {
+    "id": "TC010",
+    "description": "Refresh page mid-flow and check if state is preserved",
+    "steps": [
+      "Enter job description",
+      "Refresh page",
+      "Verify if input is retained or user is prompted to start over"
+    ]
+  },
+  {
+    "id": "TC011",
+    "description": "Verify keyboard navigation across input and buttons",
+    "steps": [
+      "Use Tab/Shift+Tab to navigate through fields",
+      "Ensure all fields and buttons are accessible"
+    ]
+  },
+  {
+    "id": "TC012",
+    "description": "Ensure screen reader reads job description input",
+    "steps": [
+      "Use screen reader",
+      "Navigate to job description field",
+      "Verify label or aria attribute is read"
+    ]
+  },
+  {
+    "id": "TC013",
+    "description": "Ensure contrast ratios are WCAG-compliant",
+    "steps": [
+      "Use accessibility audit tool",
+      "Check contrast for all buttons, labels, and text",
+      "Verify compliance"
+    ]
+  },
+  {
+    "id": "TC014",
+    "description": "Check avatar selection accessibility",
+    "steps": [
+      "Tab through avatar options",
+      "Verify focus outline and aria-labels are present"
+    ]
+  },
+  {
+    "id": "TC015",
+    "description": "Verify question generation under 3s for short inputs",
+    "steps": [
+      "Enter 500 character job description",
+      "Click 'Generate Questions'",
+      "Measure response time"
+    ]
+  },
+  {
+    "id": "TC016",
+    "description": "App remains responsive with large input",
+    "steps": [
+      "Enter 10,000 character job description",
+      "Scroll and interact with other parts of page",
+      "Verify smooth UX"
+    ]
+  },
+  {
+    "id": "TC017",
+    "description": "Ensure avatar selection does not freeze UI",
+    "steps": [
+      "Select AI avatar",
+      "Observe UI responsiveness",
+      "Ensure selection feedback occurs within 1s"
+    ]
+  },
+  {
+    "id": "TC018",
+    "description": "User enters job description manually and saves it",
+    "steps": [
+      "Navigate to JD input page",
+      "Type in a complete job description",
+      "Click 'Save'",
+      "Verify success message and skill suggestions appear"
+    ]
+  },
+  {
+    "id": "TC019",
+    "description": "User enters only job title and generates job description",
+    "steps": [
+      "Enter job title (e.g., '2-year JavaScript developer with AWS')",
+      "Click 'Generate JD'",
+      "Verify job description is populated automatically"
+    ]
+  },
+  {
+    "id": "TC020",
+    "description": "User edits the auto-generated job description",
+    "steps": [
+      "Use 'Enhanced JD' to generate description",
+      "Modify some content",
+      "Click 'Save'",
+      "Verify changes are preserved"
+    ]
+  },
+  {
+    "id": "TC021",
+    "description": "Verify AI skill suggestions appear after saving job description",
+    "steps": [
+      "Save a valid job description",
+      "Wait for skill extraction",
+      "Verify a list of skills is displayed"
+    ]
+  },
+  {
+    "id": "TC022",
+    "description": "User selects recommended skills for interview pipeline",
+    "steps": [
+      "View recommended skills",
+      "Select one or more skills",
+      "Click 'Continue'",
+      "Verify selected skills are passed to next steps"
+    ]
+  },
+  {
+    "id": "TC023",
+    "description": "Show validation error when job description is empty",
+    "steps": [
+      "Leave job description blank",
+      "Click 'Save'",
+      "Verify inline error message appears"
+    ]
+  },
+  {
+    "id": "TC024",
+    "description": "Handle very short job title in Enhanced JD",
+    "steps": [
+      "Enter short job title (e.g. 'Dev')",
+      "Click 'Generate JD'",
+      "Verify either meaningful JD is created or user is prompted for more detail"
+    ]
+  },
+  {
+    "id": "TC025",
+    "description": "Handle vague job title and skill extraction",
+    "steps": [
+      "Enter vague title like 'Engineer'",
+      "Click 'Generate JD'",
+      "Save and check skill suggestions",
+      "Verify ambiguous results are handled gracefully"
+    ]
+  },
+  {
+    "id": "TC026",
+    "description": "Submit very large job description without freezing UI",
+    "steps": [
+      "Paste 10,000+ character job description",
+      "Click 'Save'",
+      "Verify app responsiveness and successful processing"
+    ]
+  },
+  {
+    "id": "TC027",
+    "description": "Handle network failure during JD generation",
+    "steps": [
+      "Enter job title",
+      "Disable network",
+      "Click 'Generate JD'",
+      "Verify error message and retry option appear"
+    ]
+  },
+  {
+    "id": "TC028",
+    "description": "Handle network failure during skill extraction",
+    "steps": [
+      "Save job description",
+      "Disable network",
+      "Verify fallback message or retry button appears instead of crashing"
+    ]
+  },
+  {
+    "id": "TC029",
+    "description": "Ensure keyboard accessibility for all inputs and buttons",
+    "steps": [
+      "Use Tab key to navigate to JD input, job title, generate, save",
+      "Verify focus rings and interaction via keyboard only"
+    ]
+  },
+  {
+    "id": "TC030",
+    "description": "Verify screen reader reads job title input and generate button",
+    "steps": [
+      "Enable screen reader",
+      "Focus on job title input and generate button",
+      "Verify proper label is announced"
+    ]
+  },
+  {
+    "id": "TC031",
+    "description": "Skill suggestions are accessible by keyboard and screen reader",
+    "steps": [
+      "Tab through skill suggestions",
+      "Verify focus highlight and voice feedback"
+    ]
+  },
+  {
+    "id": "TC032",
+    "description": "Verify WCAG-compliant contrast across all elements",
+    "steps": [
+      "Run accessibility audit",
+      "Check color contrast on inputs, labels, and buttons"
+    ]
+  },
+  {
+    "id": "TC033",
+    "description": "Job description generation happens within 3 seconds",
+    "steps": [
+      "Enter common title",
+      "Click 'Generate JD'",
+      "Measure response time is under 3s"
+    ]
+  },
+  {
+    "id": "TC034",
+    "description": "Skill extraction completes within 2 seconds",
+    "steps": [
+      "Save a 500-character job description",
+      "Measure time until skill list appears"
+    ]
+  },
+  {
+    "id": "TC035",
+    "description": "App stays responsive during generation with large inputs",
+    "steps": [
+      "Enter a very large job description",
+      "Click 'Save' and interact with other parts of the screen",
+      "Ensure no lag or freeze occurs"
+    ]
+  },
+  {
+    "id": "TC036",
+    "description": "Select skills from AI suggestions",
+    "steps": [
+      "Navigate to skill selection screen",
+      "Click on 2-3 suggested skills",
+      "Verify selected skills appear in the selected list"
+    ]
+  },
+  {
+    "id": "TC037",
+    "description": "Manually add a custom skill",
+    "steps": [
+      "Type '2 years AWS experience' in custom skill input",
+      "Click 'Add'",
+      "Verify skill is added to the list"
+    ]
+  },
+  {
+    "id": "TC038",
+    "description": "Set difficulty level for interview questions",
+    "steps": [
+      "Open difficulty dropdown",
+      "Select 'Hard'",
+      "Verify selected difficulty is saved"
+    ]
+  },
+  {
+    "id": "TC039",
+    "description": "Enter company name for question generation",
+    "steps": [
+      "Type company name (e.g., 'TechNova Inc.')",
+      "Click 'Next'",
+      "Verify name is accepted and used"
+    ]
+  },
+  {
+    "id": "TC040",
+    "description": "AI generates standard and role-based questions",
+    "steps": [
+      "Submit job description and company name",
+      "Wait for question list to appear",
+      "Verify at least one standard and one role-based question"
+    ]
+  },
+  {
+    "id": "TC041",
+    "description": "Customize options for a standard question",
+    "steps": [
+      "Click 'Edit' on a standard question",
+      "Change multiple-choice options",
+      "Click 'Save'",
+      "Verify updated options persist"
+    ]
+  },
+  {
+    "id": "TC042",
+    "description": "Block empty skill addition",
+    "steps": [
+      "Click 'Add' without typing anything",
+      "Verify error message appears"
+    ]
+  },
+  {
+    "id": "TC043",
+    "description": "Reject skill with invalid characters",
+    "steps": [
+      "Type '@@@###' in custom skill input",
+      "Click 'Add'",
+      "Verify validation error appears"
+    ]
+  },
+  {
+    "id": "TC044",
+    "description": "Set difficulty before selecting skills",
+    "steps": [
+      "Navigate to difficulty selection",
+      "Choose 'Moderate'",
+      "Click 'Next'",
+      "Verify warning or prompt appears to select skills"
+    ]
+  },
+  {
+    "id": "TC045",
+    "description": "Handle very long company name",
+    "steps": [
+      "Type over 100 characters in the company name input",
+      "Click 'Save'",
+      "Verify UI either truncates or wraps the name cleanly"
+    ]
+  },
+  {
+    "id": "TC046",
+    "description": "Handle network failure during question generation",
+    "steps": [
+      "Simulate offline network",
+      "Click 'Generate Questions'",
+      "Verify retry option or error message appears"
+    ]
+  },
+  {
+    "id": "TC047",
+    "description": "Ensure question customization is preserved on refresh",
+    "steps": [
+      "Edit question options",
+      "Refresh page",
+      "Verify changes persist or user is warned before loss"
+    ]
+  },
+  {
+    "id": "TC048",
+    "description": "Verify keyboard navigation for form inputs",
+    "steps": [
+      "Use Tab and Shift+Tab",
+      "Navigate through skills, difficulty, company input",
+      "Verify focus outlines and keyboard interaction"
+    ]
+  },
+  {
+    "id": "TC049",
+    "description": "Ensure all form fields have ARIA labels",
+    "steps": [
+      "Enable screen reader",
+      "Navigate to form fields",
+      "Verify screen reader announces correct labels"
+    ]
+  },
+  {
+    "id": "TC050",
+    "description": "Question customization modal is accessible",
+    "steps": [
+      "Open modal",
+      "Verify ESC key closes it",
+      "Check keyboard focus is trapped within modal"
+    ]
+  },
+  {
+    "id": "TC051",
+    "description": "Verify WCAG-compliant color contrast",
+    "steps": [
+      "Run contrast checker",
+      "Verify all text and buttons meet contrast standards"
+    ]
+  },
+  {
+    "id": "TC052",
+    "description": "Verify question generation speed",
+    "steps": [
+      "Submit JD and company name",
+      "Measure time to load AI questions",
+      "Verify completion within 3 seconds"
+    ]
+  },
+  {
+    "id": "TC053",
+    "description": "Ensure UI remains responsive during rapid edits",
+    "steps": [
+      "Edit several questions/options in succession",
+      "Scroll and interact during edits",
+      "Ensure UI doesn\u2019t freeze"
+    ]
+  },
+  {
+    "id": "TC054",
+    "description": "Skill UI handles 50+ entries",
+    "steps": [
+      "Add 50 custom and AI-suggested skills",
+      "Scroll and interact with list",
+      "Verify performance remains smooth"
+    ]
+  },
+  {
+    "id": "TC055",
+    "description": "User selects a preferred answer",
+    "steps": [
+      "Navigate to question list",
+      "Click checkbox next to an answer",
+      "Verify it is selected and marked as preferred"
+    ]
+  },
+  {
+    "id": "TC056",
+    "description": "User adds a new standard question",
+    "steps": [
+      "Click 'Add Question'",
+      "Enter question text and options",
+      "Click 'Save'",
+      "Verify new question appears in list"
+    ]
+  },
+  {
+    "id": "TC057",
+    "description": "User deletes a question",
+    "steps": [
+      "Click delete icon next to a question",
+      "Confirm deletion",
+      "Verify question is removed"
+    ]
+  },
+  {
+    "id": "TC058",
+    "description": "User reorders questions",
+    "steps": [
+      "Click 'Move Up' or drag a question",
+      "Verify order is updated correctly"
+    ]
+  },
+  {
+    "id": "TC059",
+    "description": "View and edit AI-generated role-based questions",
+    "steps": [
+      "Open role-based questions section",
+      "Click 'Edit'",
+      "Update text or options",
+      "Save changes"
+    ]
+  },
+  {
+    "id": "TC060",
+    "description": "Edit preferred/ideal answer",
+    "steps": [
+      "Click edit icon next to preferred answer",
+      "Update the answer text",
+      "Click 'Save'",
+      "Verify updated value is displayed"
+    ]
+  },
+  {
+    "id": "TC061",
+    "description": "Modify both question and preferred answer",
+    "steps": [
+      "Edit question text",
+      "Edit preferred answer",
+      "Save changes",
+      "Verify updates"
+    ]
+  },
+  {
+    "id": "TC062",
+    "description": "Create interview with edited questions",
+    "steps": [
+      "Make multiple edits to questions and answers",
+      "Click 'Create'",
+      "Verify success message and transition"
+    ]
+  },
+  {
+    "id": "TC063",
+    "description": "Prevent interview creation without any questions",
+    "steps": [
+      "Delete all questions",
+      "Click 'Create'",
+      "Verify validation error appears"
+    ]
+  },
+  {
+    "id": "TC064",
+    "description": "Validate empty question input",
+    "steps": [
+      "Click 'Add Question'",
+      "Leave fields blank",
+      "Click 'Save'",
+      "Verify inline validation errors"
+    ]
+  },
+  {
+    "id": "TC065",
+    "description": "Prevent multiple preferred answers (if not allowed)",
+    "steps": [
+      "Select more than one preferred answer",
+      "Verify UI prevents or warns about the selection"
+    ]
+  },
+  {
+    "id": "TC066",
+    "description": "Handle network failure on 'Create'",
+    "steps": [
+      "Simulate offline or slow network",
+      "Click 'Create'",
+      "Verify error or retry message appears"
+    ]
+  },
+  {
+    "id": "TC067",
+    "description": "Delete all role-based questions",
+    "steps": [
+      "Remove all role-based questions",
+      "Click 'Create'",
+      "Verify fallback or confirmation step"
+    ]
+  },
+  {
+    "id": "TC068",
+    "description": "Add 50+ questions and test performance",
+    "steps": [
+      "Add 50+ standard and role-based questions",
+      "Scroll and interact with the list",
+      "Verify no UI lag"
+    ]
+  },
+  {
+    "id": "TC069",
+    "description": "Checkbox is keyboard and screen-reader accessible",
+    "steps": [
+      "Tab to checkbox",
+      "Use Space to check/uncheck",
+      "Verify screen reader announces label"
+    ]
+  },
+  {
+    "id": "TC070",
+    "description": "Custom question input has aria-labels",
+    "steps": [
+      "Enable screen reader",
+      "Navigate to input fields",
+      "Verify correct labels are announced"
+    ]
+  },
+  {
+    "id": "TC071",
+    "description": "Reordering controls are accessible via keyboard",
+    "steps": [
+      "Tab to reorder buttons",
+      "Use Enter to activate",
+      "Verify reordering works"
+    ]
+  },
+  {
+    "id": "TC072",
+    "description": "Ensure WCAG-compliant contrast on all elements",
+    "steps": [
+      "Use contrast checker",
+      "Verify button, text, and checkbox contrast > 4.5:1"
+    ]
+  },
+  {
+    "id": "TC073",
+    "description": "Reordering is performant with no visual lag",
+    "steps": [
+      "Reorder multiple questions in quick succession",
+      "Verify smooth transitions and no delay"
+    ]
+  },
+  {
+    "id": "TC074",
+    "description": "Interview creation happens under 3 seconds",
+    "steps": [
+      "Click 'Create' after edits",
+      "Measure time to response",
+      "Verify it's under 3 seconds"
+    ]
+  },
+  {
+    "id": "TC075",
+    "description": "UI remains responsive with 50+ questions",
+    "steps": [
+      "Add 50 questions",
+      "Scroll and edit",
+      "Ensure app is smooth and usable"
+    ]
+  },
+  {
+    "id": "TC076",
+    "description": "Create interview and verify success",
+    "steps": [
+      "Click 'Create' button after editing",
+      "Verify confirmation message appears"
+    ]
+  },
+  {
+    "id": "TC077",
+    "description": "Verify public interview link is generated",
+    "steps": [
+      "Create interview",
+      "Check UI for unique link",
+      "Verify format and presence"
+    ]
+  },
+  {
+    "id": "TC078",
+    "description": "Open public interview link",
+    "steps": [
+      "Visit public link in browser",
+      "Verify candidate form is loaded"
+    ]
+  },
+  {
+    "id": "TC079",
+    "description": "Candidate fills form with name, email, and resume",
+    "steps": [
+      "Enter valid name and email",
+      "Upload supported resume file (.pdf)",
+      "Click Submit"
+    ]
+  },
+  {
+    "id": "TC080",
+    "description": "Candidate receives OTP and verifies email",
+    "steps": [
+      "Submit email",
+      "Enter valid OTP",
+      "Verify form proceeds to resume review"
+    ]
+  },
+  {
+    "id": "TC081",
+    "description": "AI processes resume and displays score",
+    "steps": [
+      "Upload resume",
+      "Wait for score response",
+      "Verify score appears"
+    ]
+  },
+  {
+    "id": "TC082",
+    "description": "Resume threshold logic accepts or rejects",
+    "steps": [
+      "Enable threshold (e.g., 70%)",
+      "Upload resume with lower score",
+      "Verify rejection message shown"
+    ]
+  },
+  {
+    "id": "TC083",
+    "description": "Access interview link before creation",
+    "steps": [
+      "Open random/invalid interview URL",
+      "Verify 404 or error page is shown"
+    ]
+  },
+  {
+    "id": "TC084",
+    "description": "Candidate enters invalid email",
+    "steps": [
+      "Type 'user@.com'",
+      "Click 'Send OTP'",
+      "Verify validation error appears"
+    ]
+  },
+  {
+    "id": "TC085",
+    "description": "Candidate enters wrong or expired OTP",
+    "steps": [
+      "Submit incorrect OTP",
+      "Verify error message appears"
+    ]
+  },
+  {
+    "id": "TC086",
+    "description": "Upload unsupported resume file",
+    "steps": [
+      "Try uploading '.exe' file",
+      "Verify upload is blocked"
+    ]
+  },
+  {
+    "id": "TC087",
+    "description": "Submit form without resume upload",
+    "steps": [
+      "Skip file upload",
+      "Click Submit",
+      "Verify blocking validation"
+    ]
+  },
+  {
+    "id": "TC088",
+    "description": "Handle network failure during OTP request",
+    "steps": [
+      "Disable network",
+      "Click 'Send OTP'",
+      "Verify retry option or error message"
+    ]
+  },
+  {
+    "id": "TC089",
+    "description": "Network error during resume scoring",
+    "steps": [
+      "Upload resume",
+      "Disable network",
+      "Verify fallback message"
+    ]
+  },
+  {
+    "id": "TC090",
+    "description": "Upload very large resume file",
+    "steps": [
+      "Try uploading 15MB PDF",
+      "Verify app handles without freezing"
+    ]
+  },
+  {
+    "id": "TC091",
+    "description": "Form fields are screen-reader accessible",
+    "steps": [
+      "Enable screen reader",
+      "Navigate form fields",
+      "Verify labels are announced"
+    ]
+  },
+  {
+    "id": "TC092",
+    "description": "OTP input is keyboard-navigable",
+    "steps": [
+      "Use Tab to reach OTP field",
+      "Type and submit OTP",
+      "Verify functionality"
+    ]
+  },
+  {
+    "id": "TC093",
+    "description": "Check WCAG-compliant contrast",
+    "steps": [
+      "Run contrast checker on form and buttons",
+      "Verify all pass minimum threshold"
+    ]
+  },
+  {
+    "id": "TC094",
+    "description": "Interview link loads under 2s",
+    "steps": [
+      "Visit public link",
+      "Measure time to form render",
+      "Ensure it's < 2s"
+    ]
+  },
+  {
+    "id": "TC095",
+    "description": "OTP received within 5s",
+    "steps": [
+      "Submit email",
+      "Measure delay to OTP arrival",
+      "Verify it's < 5s"
+    ]
+  },
+  {
+    "id": "TC096",
+    "description": "Resume scoring completes under 3s",
+    "steps": [
+      "Upload resume",
+      "Measure time to score display",
+      "Verify it's < 3s"
+    ]
+  },
+  {
+    "id": "TC097",
+    "description": "Candidate meets threshold and proceeds to video interview",
+    "steps": [
+      "Upload resume with high score",
+      "Verify candidate reaches video interview stage"
+    ]
+  },
+  {
+    "id": "TC098",
+    "description": "Candidate below threshold receives rejection message",
+    "steps": [
+      "Upload low-score resume",
+      "Verify system shows 'not a good fit' message"
+    ]
+  },
+  {
+    "id": "TC099",
+    "description": "View candidate submissions in Responses tab",
+    "steps": [
+      "Navigate to Responses",
+      "Verify candidate list and data appears"
+    ]
+  },
+  {
+    "id": "TC100",
+    "description": "Verify video, resume, answers, and scores are shown in responses",
+    "steps": [
+      "Open a candidate record",
+      "Check all 4 data elements are visible and functional"
+    ]
+  },
+  {
+    "id": "TC101",
+    "description": "Open Interview Screenings for AI-based scoring details",
+    "steps": [
+      "Navigate to Interview Screenings tab",
+      "Click on a candidate",
+      "Verify scoring metrics appear"
+    ]
+  },
+  {
+    "id": "TC102",
+    "description": "Resume, video, and answers are linked per candidate",
+    "steps": [
+      "Open a candidate's detailed view",
+      "Verify correct links between resume, video, and responses"
+    ]
+  },
+  {
+    "id": "TC103",
+    "description": "Candidate score exactly equals threshold",
+    "steps": [
+      "Upload resume scoring exactly at threshold",
+      "Verify candidate proceeds to interview"
+    ]
+  },
+  {
+    "id": "TC104",
+    "description": "Threshold not configured",
+    "steps": [
+      "Disable resume threshold setting",
+      "Submit resume",
+      "Verify fallback logic or admin notice"
+    ]
+  },
+  {
+    "id": "TC105",
+    "description": "Resume file can't be analyzed",
+    "steps": [
+      "Upload corrupted resume file",
+      "Verify error is shown and user prompted"
+    ]
+  },
+  {
+    "id": "TC106",
+    "description": "Video interview skipped",
+    "steps": [
+      "Start and quit video interview early",
+      "Verify UI shows partial status in Responses tab"
+    ]
+  },
+  {
+    "id": "TC107",
+    "description": "Network failure on Responses tab",
+    "steps": [
+      "Disable network and open Responses tab",
+      "Verify fallback or retry appears"
+    ]
+  },
+  {
+    "id": "TC108",
+    "description": "No responses submitted yet",
+    "steps": [
+      "Open Responses tab with no candidates",
+      "Verify empty state message appears"
+    ]
+  },
+  {
+    "id": "TC109",
+    "description": "Performance under 200+ responses",
+    "steps": [
+      "Seed 200+ mock candidates",
+      "Load Responses tab",
+      "Verify interface remains responsive"
+    ]
+  },
+  {
+    "id": "TC110",
+    "description": "Keyboard navigation through candidate records",
+    "steps": [
+      "Use Tab to navigate Responses",
+      "Open record and check keyboard access"
+    ]
+  },
+  {
+    "id": "TC111",
+    "description": "Screen reader reads AI score and resume details",
+    "steps": [
+      "Enable screen reader",
+      "Navigate a candidate's record",
+      "Verify all key fields are announced"
+    ]
+  },
+  {
+    "id": "TC112",
+    "description": "UI meets WCAG contrast compliance",
+    "steps": [
+      "Run contrast audit",
+      "Verify all visible text and components pass"
+    ]
+  },
+  {
+    "id": "TC113",
+    "description": "Responses tab loads under 3 seconds with 50+ entries",
+    "steps": [
+      "Seed 50+ candidates",
+      "Load tab and time the render",
+      "Ensure it loads under 3s"
+    ]
+  },
+  {
+    "id": "TC114",
+    "description": "Video player initializes quickly",
+    "steps": [
+      "Click a candidate\u2019s video response",
+      "Measure player load time (< 1s)"
+    ]
+  },
+  {
+    "id": "TC115",
+    "description": "Detailed scoring loads quickly",
+    "steps": [
+      "Open Interview Screening view for candidate",
+      "Measure render time (< 2s)"
+    ]
+  },
+  {
+    "id": "TC116",
+    "description": "View completed video interview details",
+    "steps": [
+      "Go to candidate profile",
+      "Click on video interview",
+      "Verify interview data loads"
+    ]
+  },
+  {
+    "id": "TC117",
+    "description": "Display skills vs scores graph",
+    "steps": [
+      "Open candidate report",
+      "Check for visual chart of skills vs scores",
+      "Verify correctness"
+    ]
+  },
+  {
+    "id": "TC118",
+    "description": "Display overall and communication scores",
+    "steps": [
+      "Open candidate interview details",
+      "Verify interview and communication scores are visible"
+    ]
+  },
+  {
+    "id": "TC119",
+    "description": "Show AI-generated interview summary",
+    "steps": [
+      "Click on summary tab",
+      "Verify observations, positives, and negatives are shown"
+    ]
+  },
+  {
+    "id": "TC120",
+    "description": "Click 'Select' to shortlist candidate",
+    "steps": [
+      "Click Select button",
+      "Verify candidate status updates to shortlisted"
+    ]
+  },
+  {
+    "id": "TC121",
+    "description": "Click 'Reject' to disqualify candidate",
+    "steps": [
+      "Click Reject button",
+      "Verify candidate is marked rejected"
+    ]
+  },
+  {
+    "id": "TC122",
+    "description": "Upload resumes in bulk",
+    "steps": [
+      "Navigate to resume screening",
+      "Select 5+ valid resume files",
+      "Click Upload",
+      "Verify upload success"
+    ]
+  },
+  {
+    "id": "TC123",
+    "description": "Trigger resume screening process",
+    "steps": [
+      "Click Start Screening",
+      "Wait for AI to process",
+      "Verify scores are returned"
+    ]
+  },
+  {
+    "id": "TC124",
+    "description": "View ranked resume screening results",
+    "steps": [
+      "Open screening results page",
+      "Check sorted candidate list by score"
+    ]
+  },
+  {
+    "id": "TC125",
+    "description": "Attempt screening with no resumes",
+    "steps": [
+      "Click Start Screening with no files",
+      "Verify error or prompt appears"
+    ]
+  },
+  {
+    "id": "TC126",
+    "description": "Upload unsupported file format",
+    "steps": [
+      "Try uploading '.png' file",
+      "Verify system blocks or warns user"
+    ]
+  },
+  {
+    "id": "TC127",
+    "description": "Communication score not available",
+    "steps": [
+      "Open a profile with no comm score",
+      "Verify fallback message is shown"
+    ]
+  },
+  {
+    "id": "TC128",
+    "description": "Prevent double rejection",
+    "steps": [
+      "Reject a candidate",
+      "Click Reject again",
+      "Verify state doesn't change again"
+    ]
+  },
+  {
+    "id": "TC129",
+    "description": "Network failure during resume screening",
+    "steps": [
+      "Disable network",
+      "Click Start Screening",
+      "Verify error and retry option shown"
+    ]
+  },
+  {
+    "id": "TC130",
+    "description": "Handle corrupted resumes",
+    "steps": [
+      "Upload empty/corrupted file",
+      "Verify error is logged or shown",
+      "Ensure app doesn\u2019t crash"
+    ]
+  },
+  {
+    "id": "TC131",
+    "description": "Skill vs score graph is accessible",
+    "steps": [
+      "Enable screen reader",
+      "Focus on chart area",
+      "Verify labels and data are announced"
+    ]
+  },
+  {
+    "id": "TC132",
+    "description": "'Select' and 'Reject' buttons are accessible",
+    "steps": [
+      "Use Tab key to navigate to buttons",
+      "Check focus ring and screen reader labels"
+    ]
+  },
+  {
+    "id": "TC133",
+    "description": "Resume upload and summary are screen-reader accessible",
+    "steps": [
+      "Enable screen reader",
+      "Navigate resume upload UI",
+      "Verify ARIA roles and labels"
+    ]
+  },
+  {
+    "id": "TC134",
+    "description": "Ensure text meets contrast guidelines",
+    "steps": [
+      "Use contrast checker on text",
+      "Verify contrast ratio > 4.5:1"
+    ]
+  },
+  {
+    "id": "TC135",
+    "description": "Interview view loads quickly",
+    "steps": [
+      "Click on a completed interview",
+      "Measure time to load (< 2s)"
+    ]
+  },
+  {
+    "id": "TC136",
+    "description": "Bulk upload of 100+ resumes is performant",
+    "steps": [
+      "Upload 100 resumes",
+      "Scroll and interact with UI",
+      "Verify no freezing or lag"
+    ]
+  },
+  {
+    "id": "TC137",
+    "description": "AI screening completes quickly",
+    "steps": [
+      "Upload 50 resumes",
+      "Start screening",
+      "Verify response received in < 5s"
+    ]
+  },
+  {
+    "id": "TC138",
+    "description": "Upload resume and receive skill-based score",
+    "steps": [
+      "Upload a resume",
+      "Wait for processing",
+      "Verify score is displayed"
+    ]
+  },
+  {
+    "id": "TC139",
+    "description": "Display AI recommendation status",
+    "steps": [
+      "Upload a resume",
+      "Verify if 'Recommended' or 'Not Recommended' is shown"
+    ]
+  },
+  {
+    "id": "TC140",
+    "description": "Show semantic skill match report",
+    "steps": [
+      "Upload resume",
+      "Verify UI displays matched, partially matched, and missing skills"
+    ]
+  },
+  {
+    "id": "TC141",
+    "description": "High score but not recommended due to misalignment",
+    "steps": [
+      "Upload resume with many skills but irrelevant domain",
+      "Verify AI explains reason for 'Not Recommended'"
+    ]
+  },
+  {
+    "id": "TC142",
+    "description": "Moderate score but good alignment results in recommendation",
+    "steps": [
+      "Upload resume with average score but good job fit",
+      "Verify candidate is marked 'Recommended'"
+    ]
+  },
+  {
+    "id": "TC143",
+    "description": "View job description alongside AI reasoning",
+    "steps": [
+      "Open candidate screening detail",
+      "Verify JD and reasoning are displayed"
+    ]
+  },
+  {
+    "id": "TC144",
+    "description": "Score high, not recommended \u2013 explanation shown",
+    "steps": [
+      "Upload strong resume with domain mismatch",
+      "Verify explanation card is visible"
+    ]
+  },
+  {
+    "id": "TC145",
+    "description": "Skill synonyms are semantically matched",
+    "steps": [
+      "Upload resume using alternate terms (e.g., 'Node.js')",
+      "Verify correct matching with job skill set (e.g., 'JavaScript')"
+    ]
+  },
+  {
+    "id": "TC146",
+    "description": "No matching skills = low score and rejection",
+    "steps": [
+      "Upload unrelated resume",
+      "Verify low score and rejection message"
+    ]
+  },
+  {
+    "id": "TC147",
+    "description": "Relevant roles, irrelevant domain = partial score",
+    "steps": [
+      "Upload resume with similar job titles but mismatched industry",
+      "Verify AI warns of mismatch"
+    ]
+  },
+  {
+    "id": "TC148",
+    "description": "Parse complex/multi-column resume correctly",
+    "steps": [
+      "Upload resume with multi-column layout",
+      "Verify score and skill extraction still function"
+    ]
+  },
+  {
+    "id": "TC149",
+    "description": "Handle network error during scoring",
+    "steps": [
+      "Disable internet connection",
+      "Upload resume",
+      "Verify retry/error message appears"
+    ]
+  },
+  {
+    "id": "TC150",
+    "description": "Score and recommendation are screen reader accessible",
+    "steps": [
+      "Enable screen reader",
+      "Upload resume and navigate to result",
+      "Verify label and value are read"
+    ]
+  },
+  {
+    "id": "TC151",
+    "description": "Semantic report is keyboard accessible",
+    "steps": [
+      "Use Tab to navigate through skill match results",
+      "Verify all elements are reachable"
+    ]
+  },
+  {
+    "id": "TC152",
+    "description": "AI explanation card is ARIA-labeled",
+    "steps": [
+      "Open 'Not Recommended' explanation",
+      "Verify it is read correctly by screen reader"
+    ]
+  },
+  {
+    "id": "TC153",
+    "description": "Resume analysis completes in <3s",
+    "steps": [
+      "Upload a resume",
+      "Time response from upload to score",
+      "Verify < 3s load time"
+    ]
+  },
+  {
+    "id": "TC154",
+    "description": "Bulk resume screening does not freeze UI",
+    "steps": [
+      "Upload 50 resumes",
+      "Interact with UI during processing",
+      "Verify responsiveness"
+    ]
+  },
+  {
+    "id": "TC155",
+    "description": "Long resumes do not slow semantic analysis view",
+    "steps": [
+      "Upload a 6-page resume",
+      "Verify skill report loads without lag"
+    ]
+  },
+  {
+    "id": "TC156",
+    "description": "View AI recommendation and act on it",
+    "steps": [
+      "Open candidate profile with recommendation",
+      "Click Reject or Proceed",
+      "Verify action is recorded"
+    ]
+  },
+  {
+    "id": "TC157",
+    "description": "Send 24-hour interview link",
+    "steps": [
+      "Click Proceed on candidate",
+      "Verify interview link is generated with expiry"
+    ]
+  },
+  {
+    "id": "TC158",
+    "description": "Candidate opens interview link",
+    "steps": [
+      "Candidate clicks link",
+      "Verify interview page loads"
+    ]
+  },
+  {
+    "id": "TC159",
+    "description": "Candidate submits interview within time",
+    "steps": [
+      "Record and submit interview within 24 hours",
+      "Verify submission success"
+    ]
+  },
+  {
+    "id": "TC160",
+    "description": "Submitted interview is visible to recruiter",
+    "steps": [
+      "Recruiter opens candidate list",
+      "Verify interview marked as submitted"
+    ]
+  },
+  {
+    "id": "TC161",
+    "description": "Initiate interview screening",
+    "steps": [
+      "Click 'Start Screening' on submitted interview",
+      "Verify screening process starts"
+    ]
+  },
+  {
+    "id": "TC162",
+    "description": "Review AI-generated interview summary",
+    "steps": [
+      "Open candidate profile after screening",
+      "Verify summary is displayed"
+    ]
+  },
+  {
+    "id": "TC163",
+    "description": "Interview link expires after 24 hours",
+    "steps": [
+      "Open interview link after 24h",
+      "Verify 'Link Expired' message is shown"
+    ]
+  },
+  {
+    "id": "TC164",
+    "description": "Candidate submits invalid video",
+    "steps": [
+      "Upload corrupted or unsupported file",
+      "Verify error message is shown"
+    ]
+  },
+  {
+    "id": "TC165",
+    "description": "Start screening before interview submission",
+    "steps": [
+      "Try starting screening early",
+      "Verify system blocks or warns"
+    ]
+  },
+  {
+    "id": "TC166",
+    "description": "Interview submission fails mid-upload",
+    "steps": [
+      "Simulate internet drop during submission",
+      "Verify retry or autosave is triggered"
+    ]
+  },
+  {
+    "id": "TC167",
+    "description": "Reject already rejected candidate",
+    "steps": [
+      "Reject candidate",
+      "Click Reject again",
+      "Verify action is blocked or ignored"
+    ]
+  },
+  {
+    "id": "TC168",
+    "description": "Action buttons are screen-reader accessible",
+    "steps": [
+      "Enable screen reader",
+      "Navigate to Reject and Proceed buttons",
+      "Verify proper labels are read"
+    ]
+  },
+  {
+    "id": "TC169",
+    "description": "Confirmation message is accessible",
+    "steps": [
+      "Submit interview as candidate",
+      "Verify screen reader announces confirmation"
+    ]
+  },
+  {
+    "id": "TC170",
+    "description": "Expired link warning is accessible",
+    "steps": [
+      "Visit expired link",
+      "Verify warning has alert role and readable text"
+    ]
+  },
+  {
+    "id": "TC171",
+    "description": "Interview link opens under 2 seconds",
+    "steps": [
+      "Click interview link",
+      "Measure page load time",
+      "Ensure it's under 2s"
+    ]
+  },
+  {
+    "id": "TC172",
+    "description": "Large interview upload doesn't freeze UI",
+    "steps": [
+      "Upload 80MB video",
+      "Interact with page during upload",
+      "Verify responsiveness"
+    ]
+  },
+  {
+    "id": "TC173",
+    "description": "Interview summary loads quickly",
+    "steps": [
+      "Open AI summary after screening",
+      "Verify load time < 2s"
+    ]
+  }
+]

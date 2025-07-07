@@ -1,0 +1,190 @@
+[
+  {
+    "id": "TC01",
+    "description": "View completed video interview details",
+    "steps": [
+      "Go to candidate profile",
+      "Click on video interview",
+      "Verify interview data loads"
+    ]
+  },
+  {
+    "id": "TC02",
+    "description": "Display skills vs scores graph",
+    "steps": [
+      "Open candidate report",
+      "Check for visual chart of skills vs scores",
+      "Verify correctness"
+    ]
+  },
+  {
+    "id": "TC03",
+    "description": "Display overall and communication scores",
+    "steps": [
+      "Open candidate interview details",
+      "Verify interview and communication scores are visible"
+    ]
+  },
+  {
+    "id": "TC04",
+    "description": "Show AI-generated interview summary",
+    "steps": [
+      "Click on summary tab",
+      "Verify observations, positives, and negatives are shown"
+    ]
+  },
+  {
+    "id": "TC05",
+    "description": "Click 'Select' to shortlist candidate",
+    "steps": [
+      "Click Select button",
+      "Verify candidate status updates to shortlisted"
+    ]
+  },
+  {
+    "id": "TC06",
+    "description": "Click 'Reject' to disqualify candidate",
+    "steps": [
+      "Click Reject button",
+      "Verify candidate is marked rejected"
+    ]
+  },
+  {
+    "id": "TC07",
+    "description": "Upload resumes in bulk",
+    "steps": [
+      "Navigate to resume screening",
+      "Select 5+ valid resume files",
+      "Click Upload",
+      "Verify upload success"
+    ]
+  },
+  {
+    "id": "TC08",
+    "description": "Trigger resume screening process",
+    "steps": [
+      "Click Start Screening",
+      "Wait for AI to process",
+      "Verify scores are returned"
+    ]
+  },
+  {
+    "id": "TC09",
+    "description": "View ranked resume screening results",
+    "steps": [
+      "Open screening results page",
+      "Check sorted candidate list by score"
+    ]
+  },
+  {
+    "id": "TC10",
+    "description": "Attempt screening with no resumes",
+    "steps": [
+      "Click Start Screening with no files",
+      "Verify error or prompt appears"
+    ]
+  },
+  {
+    "id": "TC11",
+    "description": "Upload unsupported file format",
+    "steps": [
+      "Try uploading '.png' file",
+      "Verify system blocks or warns user"
+    ]
+  },
+  {
+    "id": "TC12",
+    "description": "Communication score not available",
+    "steps": [
+      "Open a profile with no comm score",
+      "Verify fallback message is shown"
+    ]
+  },
+  {
+    "id": "TC13",
+    "description": "Prevent double rejection",
+    "steps": [
+      "Reject a candidate",
+      "Click Reject again",
+      "Verify state doesn't change again"
+    ]
+  },
+  {
+    "id": "TC14",
+    "description": "Network failure during resume screening",
+    "steps": [
+      "Disable network",
+      "Click Start Screening",
+      "Verify error and retry option shown"
+    ]
+  },
+  {
+    "id": "TC15",
+    "description": "Handle corrupted resumes",
+    "steps": [
+      "Upload empty/corrupted file",
+      "Verify error is logged or shown",
+      "Ensure app doesn’t crash"
+    ]
+  },
+  {
+    "id": "TC16",
+    "description": "Skill vs score graph is accessible",
+    "steps": [
+      "Enable screen reader",
+      "Focus on chart area",
+      "Verify labels and data are announced"
+    ]
+  },
+  {
+    "id": "TC17",
+    "description": "'Select' and 'Reject' buttons are accessible",
+    "steps": [
+      "Use Tab key to navigate to buttons",
+      "Check focus ring and screen reader labels"
+    ]
+  },
+  {
+    "id": "TC18",
+    "description": "Resume upload and summary are screen-reader accessible",
+    "steps": [
+      "Enable screen reader",
+      "Navigate resume upload UI",
+      "Verify ARIA roles and labels"
+    ]
+  },
+  {
+    "id": "TC19",
+    "description": "Ensure text meets contrast guidelines",
+    "steps": [
+      "Use contrast checker on text",
+      "Verify contrast ratio > 4.5:1"
+    ]
+  },
+  {
+    "id": "TC20",
+    "description": "Interview view loads quickly",
+    "steps": [
+      "Click on a completed interview",
+      "Measure time to load (< 2s)"
+    ]
+  },
+  {
+    "id": "TC21",
+    "description": "Bulk upload of 100+ resumes is performant",
+    "steps": [
+      "Upload 100 resumes",
+      "Scroll and interact with UI",
+      "Verify no freezing or lag"
+    ]
+  },
+  {
+    "id": "TC22",
+    "description": "AI screening completes quickly",
+    "steps": [
+      "Upload 50 resumes",
+      "Start screening",
+      "Verify response received in < 5s"
+    ]
+  }
+]

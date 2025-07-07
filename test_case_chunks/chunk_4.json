@@ -1,0 +1,192 @@
+[
+  {
+    "id": "TC01",
+    "description": "User selects a preferred answer",
+    "steps": [
+      "Navigate to question list",
+      "Click checkbox next to an answer",
+      "Verify it is selected and marked as preferred"
+    ]
+  },
+  {
+    "id": "TC02",
+    "description": "User adds a new standard question",
+    "steps": [
+      "Click 'Add Question'",
+      "Enter question text and options",
+      "Click 'Save'",
+      "Verify new question appears in list"
+    ]
+  },
+  {
+    "id": "TC03",
+    "description": "User deletes a question",
+    "steps": [
+      "Click delete icon next to a question",
+      "Confirm deletion",
+      "Verify question is removed"
+    ]
+  },
+  {
+    "id": "TC04",
+    "description": "User reorders questions",
+    "steps": [
+      "Click 'Move Up' or drag a question",
+      "Verify order is updated correctly"
+    ]
+  },
+  {
+    "id": "TC05",
+    "description": "View and edit AI-generated role-based questions",
+    "steps": [
+      "Open role-based questions section",
+      "Click 'Edit'",
+      "Update text or options",
+      "Save changes"
+    ]
+  },
+  {
+    "id": "TC06",
+    "description": "Edit preferred/ideal answer",
+    "steps": [
+      "Click edit icon next to preferred answer",
+      "Update the answer text",
+      "Click 'Save'",
+      "Verify updated value is displayed"
+    ]
+  },
+  {
+    "id": "TC07",
+    "description": "Modify both question and preferred answer",
+    "steps": [
+      "Edit question text",
+      "Edit preferred answer",
+      "Save changes",
+      "Verify updates"
+    ]
+  },
+  {
+    "id": "TC08",
+    "description": "Create interview with edited questions",
+    "steps": [
+      "Make multiple edits to questions and answers",
+      "Click 'Create'",
+      "Verify success message and transition"
+    ]
+  },
+  {
+    "id": "TC09",
+    "description": "Prevent interview creation without any questions",
+    "steps": [
+      "Delete all questions",
+      "Click 'Create'",
+      "Verify validation error appears"
+    ]
+  },
+  {
+    "id": "TC10",
+    "description": "Validate empty question input",
+    "steps": [
+      "Click 'Add Question'",
+      "Leave fields blank",
+      "Click 'Save'",
+      "Verify inline validation errors"
+    ]
+  },
+  {
+    "id": "TC11",
+    "description": "Prevent multiple preferred answers (if not allowed)",
+    "steps": [
+      "Select more than one preferred answer",
+      "Verify UI prevents or warns about the selection"
+    ]
+  },
+  {
+    "id": "TC12",
+    "description": "Handle network failure on 'Create'",
+    "steps": [
+      "Simulate offline or slow network",
+      "Click 'Create'",
+      "Verify error or retry message appears"
+    ]
+  },
+  {
+    "id": "TC13",
+    "description": "Delete all role-based questions",
+    "steps": [
+      "Remove all role-based questions",
+      "Click 'Create'",
+      "Verify fallback or confirmation step"
+    ]
+  },
+  {
+    "id": "TC14",
+    "description": "Add 50+ questions and test performance",
+    "steps": [
+      "Add 50+ standard and role-based questions",
+      "Scroll and interact with the list",
+      "Verify no UI lag"
+    ]
+  },
+  {
+    "id": "TC15",
+    "description": "Checkbox is keyboard and screen-reader accessible",
+    "steps": [
+      "Tab to checkbox",
+      "Use Space to check/uncheck",
+      "Verify screen reader announces label"
+    ]
+  },
+  {
+    "id": "TC16",
+    "description": "Custom question input has aria-labels",
+    "steps": [
+      "Enable screen reader",
+      "Navigate to input fields",
+      "Verify correct labels are announced"
+    ]
+  },
+  {
+    "id": "TC17",
+    "description": "Reordering controls are accessible via keyboard",
+    "steps": [
+      "Tab to reorder buttons",
+      "Use Enter to activate",
+      "Verify reordering works"
+    ]
+  },
+  {
+    "id": "TC18",
+    "description": "Ensure WCAG-compliant contrast on all elements",
+    "steps": [
+      "Use contrast checker",
+      "Verify button, text, and checkbox contrast > 4.5:1"
+    ]
+  },
+  {
+    "id": "TC19",
+    "description": "Reordering is performant with no visual lag",
+    "steps": [
+      "Reorder multiple questions in quick succession",
+      "Verify smooth transitions and no delay"
+    ]
+  },
+  {
+    "id": "TC20",
+    "description": "Interview creation happens under 3 seconds",
+    "steps": [
+      "Click 'Create' after edits",
+      "Measure time to response",
+      "Verify it's under 3 seconds"
+    ]
+  },
+  {
+    "id": "TC21",
+    "description": "UI remains responsive with 50+ questions",
+    "steps": [
+      "Add 50 questions",
+      "Scroll and edit",
+      "Ensure app is smooth and usable"
+    ]
+  }
+]

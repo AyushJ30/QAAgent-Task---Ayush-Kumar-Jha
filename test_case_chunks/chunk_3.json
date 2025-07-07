@@ -1,0 +1,173 @@
+[
+  {
+    "id": "TC01",
+    "description": "Select skills from AI suggestions",
+    "steps": [
+      "Navigate to skill selection screen",
+      "Click on 2-3 suggested skills",
+      "Verify selected skills appear in the selected list"
+    ]
+  },
+  {
+    "id": "TC02",
+    "description": "Manually add a custom skill",
+    "steps": [
+      "Type '2 years AWS experience' in custom skill input",
+      "Click 'Add'",
+      "Verify skill is added to the list"
+    ]
+  },
+  {
+    "id": "TC03",
+    "description": "Set difficulty level for interview questions",
+    "steps": [
+      "Open difficulty dropdown",
+      "Select 'Hard'",
+      "Verify selected difficulty is saved"
+    ]
+  },
+  {
+    "id": "TC04",
+    "description": "Enter company name for question generation",
+    "steps": [
+      "Type company name (e.g., 'TechNova Inc.')",
+      "Click 'Next'",
+      "Verify name is accepted and used"
+    ]
+  },
+  {
+    "id": "TC05",
+    "description": "AI generates standard and role-based questions",
+    "steps": [
+      "Submit job description and company name",
+      "Wait for question list to appear",
+      "Verify at least one standard and one role-based question"
+    ]
+  },
+  {
+    "id": "TC06",
+    "description": "Customize options for a standard question",
+    "steps": [
+      "Click 'Edit' on a standard question",
+      "Change multiple-choice options",
+      "Click 'Save'",
+      "Verify updated options persist"
+    ]
+  },
+  {
+    "id": "TC07",
+    "description": "Block empty skill addition",
+    "steps": [
+      "Click 'Add' without typing anything",
+      "Verify error message appears"
+    ]
+  },
+  {
+    "id": "TC08",
+    "description": "Reject skill with invalid characters",
+    "steps": [
+      "Type '@@@###' in custom skill input",
+      "Click 'Add'",
+      "Verify validation error appears"
+    ]
+  },
+  {
+    "id": "TC09",
+    "description": "Set difficulty before selecting skills",
+    "steps": [
+      "Navigate to difficulty selection",
+      "Choose 'Moderate'",
+      "Click 'Next'",
+      "Verify warning or prompt appears to select skills"
+    ]
+  },
+  {
+    "id": "TC10",
+    "description": "Handle very long company name",
+    "steps": [
+      "Type over 100 characters in the company name input",
+      "Click 'Save'",
+      "Verify UI either truncates or wraps the name cleanly"
+    ]
+  },
+  {
+    "id": "TC11",
+    "description": "Handle network failure during question generation",
+    "steps": [
+      "Simulate offline network",
+      "Click 'Generate Questions'",
+      "Verify retry option or error message appears"
+    ]
+  },
+  {
+    "id": "TC12",
+    "description": "Ensure question customization is preserved on refresh",
+    "steps": [
+      "Edit question options",
+      "Refresh page",
+      "Verify changes persist or user is warned before loss"
+    ]
+  },
+  {
+    "id": "TC13",
+    "description": "Verify keyboard navigation for form inputs",
+    "steps": [
+      "Use Tab and Shift+Tab",
+      "Navigate through skills, difficulty, company input",
+      "Verify focus outlines and keyboard interaction"
+    ]
+  },
+  {
+    "id": "TC14",
+    "description": "Ensure all form fields have ARIA labels",
+    "steps": [
+      "Enable screen reader",
+      "Navigate to form fields",
+      "Verify screen reader announces correct labels"
+    ]
+  },
+  {
+    "id": "TC15",
+    "description": "Question customization modal is accessible",
+    "steps": [
+      "Open modal",
+      "Verify ESC key closes it",
+      "Check keyboard focus is trapped within modal"
+    ]
+  },
+  {
+    "id": "TC16",
+    "description": "Verify WCAG-compliant color contrast",
+    "steps": [
+      "Run contrast checker",
+      "Verify all text and buttons meet contrast standards"
+    ]
+  },
+  {
+    "id": "TC17",
+    "description": "Verify question generation speed",
+    "steps": [
+      "Submit JD and company name",
+      "Measure time to load AI questions",
+      "Verify completion within 3 seconds"
+    ]
+  },
+  {
+    "id": "TC18",
+    "description": "Ensure UI remains responsive during rapid edits",
+    "steps": [
+      "Edit several questions/options in succession",
+      "Scroll and interact during edits",
+      "Ensure UI doesn’t freeze"
+    ]
+  },
+  {
+    "id": "TC19",
+    "description": "Skill UI handles 50+ entries",
+    "steps": [
+      "Add 50 custom and AI-suggested skills",
+      "Scroll and interact with list",
+      "Verify performance remains smooth"
+    ]
+  }
+]

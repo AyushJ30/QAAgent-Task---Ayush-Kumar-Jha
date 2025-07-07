@@ -10,5 +10,5 @@ A full-stack automation pipeline to assist QA engineers with generating and exec
 - 📝 **Test Case Generation** (Manual or via prompts)
 - 📂 **Structured Outputs** in Markdown and JSON
 - 🧪 **Playwright Test Execution** with auto-generated `.spec.ts` files
-- 📊 **Next.js Dashboard** to view pass/fail status
+- 📊 **Dashboard** to view pass/fail status
 - 🛠️ Clean modular structure (Python + TypeScript)
